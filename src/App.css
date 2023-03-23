@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+:root {
+  --primary-font: 'Montserrat', sans-serif;
+
+  --brand-blue: #5387ff;
+  --brand-light: #7ba1fb;
+  --neutral-black: #000000;
+  --neutral-white: #ffffff;
+  --grey-1: #333333;
+  --grey-2: #4f4f4f;
+  --grey-3: #828282;
+  --grey-4: #bdbdbd;
+  --grey-5: #e0e0e0;
+  --grey-6: #f2f2f2;
+
+  --label-reguler: 400 10px/24px var(--primary-font);
+  --label-medium: 600 10px/24px var(--primary-font);
+  --label-bold: 700 10px/24px var(--primary-font);
+
+  --text-xs-reguler: 400 12px/24px var(--primary-font);
+  --text-xs-medium: 600 12px/24px var(--primary-font);
+  --text-xs-bold: 700 12px/24px var(--primary-font);
+
+  --text-sm-reguler: 400 14px/24px var(--primary-font);
+  --text-sm-medium: 600 14px/24px var(--primary-font);
+  --text-sm-bold: 700 14px/24px var(--primary-font);
+
+  --text-base-reguler: 400 16px/24px var(--primary-font);
+  --text-base-medium: 600 16px/24px var(--primary-font);
+  --text-base-bold: 700 16px/24px var(--primary-font);
+
+  --text-lg-reguler: 400 18px/24px var(--primary-font);
+  --text-lg-medium: 600 18px/24px var(--primary-font);
+  --text-lg-bold: 700 18px/24px var(--primary-font);
+
+  --text-xl-reguler: 400 28px/24px var(--primary-font);
+  --text-xl-medium: 600 28px/24px var(--primary-font);
+  --text-xl-bold: 700 28px/24px var(--primary-font);
+
+  --text-2xl-reguler: 400 32px/24px var(--primary-font);
+  --text-2xl-medium: 600 32px/24px var(--primary-font);
+  --text-2xl-bold: 700 32px/24px var(--primary-font);
+
+  --text-3xl-reguler: 400 36px/24px var(--primary-font);
+  --text-3xl-medium: 600 36px/24px var(--primary-font);
+  --text-3xl-bold: 700 36px/24px var(--primary-font);
+
+  --text-4xl-reguler: 400 40px/24px var(--primary-font);
+  --text-4xl-medium: 600 40px/24px var(--primary-font);
+  --text-4xl-bold: 700 40px/24px var(--primary-font);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--primary-font);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  box-sizing: border-box;
 }
