@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+}
+.wrap{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.wrap span {
+  background-color: inherit;
+}

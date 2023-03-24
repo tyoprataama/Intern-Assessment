@@ -1,0 +1,12 @@
+.table {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.table span {
+  color: #5271ff;
+  background-color: #fff;
+  cursor: pointer;
+}

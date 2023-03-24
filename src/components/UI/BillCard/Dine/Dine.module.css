@@ -1,0 +1,10 @@
+.dropdown {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #dfdfdf;
+  background-color: #fff;
+}
+
+.btn {
+  background-color: #fff;
+}

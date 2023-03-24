@@ -4,82 +4,82 @@
       "title": "Cumi Tepung",
       "price": "32.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?squid"
+      "image": "https://source.unsplash.com/200x200/?seafood"
     },
     {
       "id": 2,
       "title": "Cumi Bakar",
       "price": "32.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?squid"
+      "image": "https://source.unsplash.com/200x200/?seafood"
     },
     {
       "id": 3,
       "title": "Cumi Cabe G...",
       "price": "32.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?squid"
+      "image": "https://source.unsplash.com/200x200/?seafood"
     },
     {
       "id": 4,
       "title": "Cumi & Kerang",
       "price": "",
       "clicked": false,
-      "image": "https://source.unsplash.com/200x200/?oyster"
+      "image": "https://source.unsplash.com/200x200/?seafood"
     }
   ],
   "sayuran": [{
-      "id": 1,
+      "id": 5,
       "title": "Cah Kalian",
       "price": "28.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?vegetable"
+      "image": "https://source.unsplash.com/100x100/?salad"
     },
     {
-      "id": 2,
+      "id": 6,
       "title": "Tahu Goreng",
       "price": "28.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?tofu"
+      "image": "https://source.unsplash.com/100x100/?salad"
     },
     {
-      "id": 3,
+      "id": 7,
       "title": "Cah Taoge",
       "price": "35.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?vegetable"
+      "image": "https://source.unsplash.com/100x100/?random,salad"
     },
     {
-      "id": 4,
+      "id": 8,
       "title": "Sayuran",
       "price": "",
       "clicked": false,
-      "image": "https://source.unsplash.com/100x100/?vegetable"
+      "image": "https://source.unsplash.com/100x100/?salad"
     }
   ],
   "ikan": [{
-      "id": 1,
+      "id": 9,
       "title": "Kerang Bamb...",
       "price": "38.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?oyster"
     },
     {
-      "id": 2,
+      "id": 10,
       "title": "Kepiting Pad...",
       "price": "58.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?crab"
     },
     {
-      "id": 3,
+      "id": 11,
       "title": "Gurame Asa...",
       "price": "42.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?fish"
     },
     {
-      "id": 4,
+      "id": 12,
       "title": "Ikan",
       "price": "",
       "clicked": false,
@@ -87,28 +87,28 @@
     }
   ],
   "minuman": [{
-      "id": 1,
+      "id": 13,
       "title": "Udang Bakar",
       "price": "25.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?shrimp"
     },
     {
-      "id": 2,
+      "id": 14,
       "title": "Udang Saos...",
       "price": "20.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?shrimp"
     },
     {
-      "id": 3,
+      "id": 15,
       "title": "Udang Mayo...",
       "price": "27.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?shrimp"
     },
     {
-      "id": 4,
+      "id": 16,
       "title": "Minuman",
       "price": "",
       "clicked": false,
@@ -116,28 +116,28 @@
     }
   ],
   "happy": [{
-      "id": 1,
+      "id": 17,
       "title": "Iced Tea",
       "price": "5.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?tea"
     },
     {
-      "id": 2,
+      "id": 18,
       "title": "Es Jeruk Nipis",
       "price": "7.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?orange"
     },
     {
-      "id": 3,
+      "id": 19,
       "title": "Nasi Putih",
       "price": "5.000",
       "clicked": true,
       "image": "https://source.unsplash.com/100x100/?rice"
     },
     {
-      "id": 4,
+      "id": 20,
       "title": "Happy Hour",
       "price": "",
       "clicked": false,

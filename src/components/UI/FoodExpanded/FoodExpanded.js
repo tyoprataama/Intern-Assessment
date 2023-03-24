@@ -5,7 +5,7 @@ import styles from './FoodExpanded.css';
 const Backdrop = ({ onClose }) => {
   return <div className={styles.backdrop} onClick={onClose}></div>
 }
-const Modal = ({ imgSrc, imgAlt, title, price, clicked, onClose }) => {
+const Modal = ({ imgSrc, imgAlt, title, price,  onClose }) => {
   return (
     <div className={styles.modal}>
       <div className={styles['modal-header']}>

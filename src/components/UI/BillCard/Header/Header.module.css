@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+}
+
+.icon1 {
+  flex: 1;
+  background-color: inherit;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  flex: 3;
+  align-items: center;
+  background-color: inherit;
+  text-align: center;
+  justify-content: center;
+}
+
+.icon2 {
+  flex: 1;
+  background-color: inherit;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
