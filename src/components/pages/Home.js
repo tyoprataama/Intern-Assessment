@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { FoodCard } from '../../components/UI/index';
@@ -34,7 +34,10 @@ function MyVerticallyCenteredModal(props) {
 }
 
 const Home = () => {
+  //  Modal
   const [modalShow, setModalShow] = React.useState(false);
+  //  Total
+  const [totalAmount, setTotalAmount] = useState(0);
 
   const [cart, setCart] = useState([])
   const addFoodCart = async (data) => {
@@ -67,6 +70,13 @@ const Home = () => {
       setCart([...cart, addingFood]);
     }
   }
+   useEffect(() => {
+     let newTotalAmount = 0;
+     cart.forEach(icart => {
+       newTotalAmount = newTotalAmount + parseInt(icart.totalAmount);
+     })
+     setTotalAmount(newTotalAmount)
+   }, [cart])
   return (
     <div className={styles.home}>
       <section className={styles.food}>
@@ -170,7 +180,7 @@ const Home = () => {
         : 'No Items'
         }
         <div className={styles.container}>
-        <button className={styles.btn}>Clear
+        <button className={styles.btn}>Clear Sale
         </button>
         </div>
         <div className={styles['btn-wrap']}>
@@ -179,7 +189,7 @@ const Home = () => {
         </div>
          <div className={styles['btn-wrap']}>
           <button className={styles['btn-icon']}>Icon Split Bill</button>
-          <button className={styles['btn-charges']}>Charges</button>
+          <button className={styles['btn-charges']}>Charges Rp.{totalAmount}.000</button>
         </div>
          <MyVerticallyCenteredModal
         show={modalShow}

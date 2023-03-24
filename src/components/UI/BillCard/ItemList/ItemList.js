@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './ItemList.module.css'
 
-const ItemList = ({title, quantity, price}) => {
+const ItemList = ({id, title, quantity, price}) => {
   return (
     <div className={styles.container}>
       <div className={styles.wrap}>
