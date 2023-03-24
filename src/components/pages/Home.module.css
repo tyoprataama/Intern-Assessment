@@ -11,8 +11,22 @@
   margin-top: 40px;
   flex: 1;
   background-color: #fff;
-  height: 500px;
+  height: 300px;
 }
+
+.btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-bill {
+  border: none;
+  padding: 20px 84px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   text-align: center;

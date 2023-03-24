@@ -142,7 +142,11 @@ const Home = () => {
         <div className={styles.container}>
         <button className={styles.btn}>Clear
         </button>
-    </div>
+        </div>
+        <div className={styles['btn-wrap']}>
+          <button className={styles['btn-bill']}>Save Bill</button>
+          <button className={styles['btn-bill']}>Print Bill</button>
+        </div>
       </section>
     </div>
   );
