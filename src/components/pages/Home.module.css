@@ -1,0 +1,50 @@
+.food {
+  background-color: var(--grey-6);
+}
+
+.food__container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 40px 0px;
+  /* max-width: 1680px; */
+  background-color: var(--grey-6);
+  margin: auto;
+}
+
+.food article {
+  margin-bottom: 20px;
+}
+
+.food__title {
+  font: var(--text-2xl-medium);
+  margin-bottom: 6px;
+  color: var(--neutral-black);
+}
+
+.food-recommended__list {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 40px;
+}
+
+.food-porridge__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 6px;
+}
+
+.food-rice__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 6px;
+}
+
+.food-baverage__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 6px;
+}

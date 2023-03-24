@@ -33,28 +33,28 @@
       "title": "Cah Kalian",
       "price": "28.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?vegetable"
+      "image": "https://source.unsplash.com/100x100/?vegetable"
     },
     {
       "id": 2,
       "title": "Tahu Goreng",
       "price": "28.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?tofu"
+      "image": "https://source.unsplash.com/100x100/?tofu"
     },
     {
       "id": 3,
       "title": "Cah Taoge",
       "price": "35.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?vegetable"
+      "image": "https://source.unsplash.com/100x100/?vegetable"
     },
     {
       "id": 4,
       "title": "Sayuran",
       "price": "",
       "clicked": false,
-      "image": "https://source.unsplash.com/200x200/?vegetable"
+      "image": "https://source.unsplash.com/100x100/?vegetable"
     }
   ],
   "ikan": [{
@@ -62,28 +62,28 @@
       "title": "Kerang Bamb...",
       "price": "38.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?oyster"
+      "image": "https://source.unsplash.com/100x100/?oyster"
     },
     {
       "id": 2,
       "title": "Kepiting Pad...",
       "price": "58.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?crab"
+      "image": "https://source.unsplash.com/100x100/?crab"
     },
     {
       "id": 3,
       "title": "Gurame Asa...",
       "price": "42.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?fish"
+      "image": "https://source.unsplash.com/100x100/?fish"
     },
     {
       "id": 4,
       "title": "Ikan",
       "price": "",
       "clicked": false,
-      "image": "https://source.unsplash.com/200x200/?rice"
+      "image": "https://source.unsplash.com/100x100/?rice"
     }
   ],
   "minuman": [{
@@ -91,28 +91,28 @@
       "title": "Udang Bakar",
       "price": "25.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?shrimp"
+      "image": "https://source.unsplash.com/100x100/?shrimp"
     },
     {
       "id": 2,
       "title": "Udang Saos...",
       "price": "20.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?shrimp"
+      "image": "https://source.unsplash.com/100x100/?shrimp"
     },
     {
       "id": 3,
       "title": "Udang Mayo...",
       "price": "27.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?shrimp"
+      "image": "https://source.unsplash.com/100x100/?shrimp"
     },
     {
       "id": 4,
       "title": "Minuman",
       "price": "",
       "clicked": false,
-      "image": "https://source.unsplash.com/200x200/?milktea"
+      "image": "https://source.unsplash.com/100x100/?milktea"
     }
   ],
   "happy": [{
@@ -120,28 +120,28 @@
       "title": "Iced Tea",
       "price": "5.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?tea"
+      "image": "https://source.unsplash.com/100x100/?tea"
     },
     {
       "id": 2,
       "title": "Es Jeruk Nipis",
       "price": "7.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?orange"
+      "image": "https://source.unsplash.com/100x100/?orange"
     },
     {
       "id": 3,
       "title": "Nasi Putih",
       "price": "5.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?rice"
+      "image": "https://source.unsplash.com/100x100/?rice"
     },
     {
       "id": 4,
       "title": "Happy Hour",
       "price": "",
       "clicked": false,
-      "image": "https://source.unsplash.com/200x200/?milktea"
+      "image": "https://source.unsplash.com/100x100/?milktea"
     }
   ]
 }
