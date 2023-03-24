@@ -1,11 +1,41 @@
 import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 import { FoodCard } from '../../components/UI/index';
 import { dumyData } from '../../json/index';
 import BillCard from '../UI/BillCard/BillCard';
 import ItemList from '../UI/BillCard/ItemList/ItemList';
 import styles from './Home.module.css';
 
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Success
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Your change is saved</h4>
+        <p>
+          This is just front-end function, your data actually not saved yet!
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 const Home = () => {
+  const [modalShow, setModalShow] = React.useState(false);
+
   const [cart, setCart] = useState([])
   const addFoodCart = async (data) => {
     let findFoodInCart = await cart.find(i => {
@@ -144,9 +174,16 @@ const Home = () => {
         </button>
         </div>
         <div className={styles['btn-wrap']}>
-          <button className={styles['btn-bill']}>Save Bill</button>
+          <button className={styles['btn-bill']} onClick={() => setModalShow(true)}>Save Bill</button>
           <button className={styles['btn-bill']}>Print Bill</button>
         </div>
+         <div className={styles['btn-wrap']}>
+          <button className={styles['btn-icon']}>Icon Split Bill</button>
+          <button className={styles['btn-charges']}>Charges</button>
+        </div>
+         <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)} />
       </section>
     </div>
   );

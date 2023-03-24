@@ -22,9 +22,28 @@
 
 .btn-bill {
   border: none;
-  padding: 20px 84px;
+  padding: 20px 85px;
   background-color: #e0e0e0;
   cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.btn-charges {
+  flex: 3;
+  padding: 20px;
+  border: none;
+  background-color: rgb(77, 86, 223);
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #fff;
+}
+
+.btn-icon {
+  flex: 1;
+  border: 1px solid #fff;
+  background-color: rgb(77, 86, 223);
+  color: #fff;
+  padding: 20px;
 }
 
 .container {
