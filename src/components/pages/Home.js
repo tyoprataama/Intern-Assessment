@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -7,6 +7,8 @@ import { dumyData } from '../../json/index';
 import BillCard from '../UI/BillCard/BillCard';
 import ItemList from '../UI/BillCard/ItemList/ItemList';
 import styles from './Home.module.css';
+import { PrintBill } from '../UI/BillCard/PrintBill/PrintBill';
+import { useReactToPrint } from 'react-to-print';
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -39,6 +41,14 @@ const Home = () => {
   //  Modal charges
   const [show, setShow] = useState(false);
   const [prc, setPrc] = useState("");
+  //  Print
+  const componentRef = useRef();
+  const handleToPrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
+  const handlePrint = () => {
+    handleToPrint();
+  }
 
   const handleInputChange = (event) => {
     setPrc(event.target.value);
@@ -219,9 +229,12 @@ const Home = () => {
         <button className={styles.btn}>Clear Sale
         </button>
         </div>
+        <div style={{ display: 'none' }}>
+          <PrintBill cart={cart} totalAmount={totalAmount} ref={componentRef} />
+        </div>
         <div className={styles['btn-wrap']}>
           <button className={styles['btn-bill']} onClick={() => setModalShow(true)}>Save Bill</button>
-          <button className={styles['btn-bill']}>Print Bill</button>
+          <button className={styles['btn-bill']} onClick={handlePrint}>Print Bill</button>
         </div>
          <div className={styles['btn-wrap']}>
           <button className={styles['btn-icon']}>Icon Split Bill</button>
