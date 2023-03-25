@@ -55,6 +55,9 @@ const Home = () => {
   }
 
   const [cart, setCart] = useState([])
+   const clearSales = () => {
+     setCart([]);
+   }
   const addFoodCart = async (data) => {
     let findFoodInCart = await cart.find(i => {
       return i.id === data.id && data.clicked !== false
@@ -226,7 +229,7 @@ const Home = () => {
         : 'No Items'
         }
         <div className={styles.container}>
-        <button className={styles.btn}>Clear Sale
+        <button className={styles.btn} onClick={clearSales}>Clear Sale
         </button>
         </div>
         <div style={{ display: 'none' }}>
