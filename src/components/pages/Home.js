@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { FoodCard } from '../../components/UI/index';
 import { dumyData } from '../../json/index';
@@ -26,18 +27,22 @@ function MyVerticallyCenteredModal(props) {
           This is just front-end function, your data actually not saved yet!
         </p>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }
 
 const Home = () => {
-  //  Modal
+  //  Modal save
   const [modalShow, setModalShow] = React.useState(false);
   //  Total
   const [totalAmount, setTotalAmount] = useState(0);
+  //  Modal charges
+  const [show, setShow] = useState(false);
+  const [prc, setPrc] = useState("");
+
+  const handleInputChange = (event) => {
+    setPrc(event.target.value);
+  }
 
   const [cart, setCart] = useState([])
   const addFoodCart = async (data) => {
@@ -73,7 +78,7 @@ const Home = () => {
    useEffect(() => {
      let newTotalAmount = 0;
      cart.forEach(icart => {
-       newTotalAmount = newTotalAmount + parseInt(icart.totalAmount);
+       newTotalAmount = newTotalAmount + parseInt(icart.totalAmount*1000);
      })
      setTotalAmount(newTotalAmount)
    }, [cart])
@@ -168,7 +173,38 @@ const Home = () => {
           </article>
         </div>
       </section>
+
       <section className={styles.bill}>
+
+        {/* Modal */}
+        <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-custom-modal-styling-title">
+            Checkout
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+           <Form>
+      <Form.Group className="mb-3" controlId="formBasicInput">
+        <Form.Label>Enter Cash</Form.Label>
+        <Form.Control type="number" placeholder="32000" id='priceVal' value={prc} onChange={handleInputChange} />
+        <Form.Text className="text-muted">
+          Harga makanan adalah Rp.{totalAmount}, uang yang harus dikembalikan adalah <strong>Rp.{prc - totalAmount}</strong>.
+        </Form.Text>
+      </Form.Group>
+
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+        </Modal.Body>
+      </Modal>
+
         <BillCard />
         {cart ? cart.map((cartItem, key) => 
           <ItemList
@@ -189,7 +225,7 @@ const Home = () => {
         </div>
          <div className={styles['btn-wrap']}>
           <button className={styles['btn-icon']}>Icon Split Bill</button>
-          <button className={styles['btn-charges']}>Charges Rp.{totalAmount}.000</button>
+          <button className={styles['btn-charges']} onClick={() => setShow(true)}>Charges Rp.{totalAmount}</button>
         </div>
          <MyVerticallyCenteredModal
         show={modalShow}
