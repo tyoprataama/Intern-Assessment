@@ -207,7 +207,7 @@ const Home = () => {
         <Form.Label>Enter Cash</Form.Label>
         <Form.Control type="number" placeholder="32000" id='priceVal' value={prc} onChange={handleInputChange} />
         <Form.Text className="text-muted">
-          Harga makanan adalah Rp.{totalAmount}, uang yang harus dikembalikan adalah <strong>Rp.{prc - totalAmount}</strong>.
+          Harga makanan adalah Rp.{totalAmount}, uang yang harus kembalian adalah <strong>Rp.{prc - totalAmount}</strong>.
         </Form.Text>
       </Form.Group>
 
@@ -241,7 +241,7 @@ const Home = () => {
         </div>
          <div className={styles['btn-wrap']}>
           <button className={styles['btn-icon']}>Icon Split Bill</button>
-          <button className={styles['btn-charges']} onClick={() => setShow(true)}>Charges Rp.{totalAmount}</button>
+          <button className={styles['btn-charges']} onClick={() => setShow(true)}>Charge Rp.{totalAmount}</button>
         </div>
          <MyVerticallyCenteredModal
         show={modalShow}

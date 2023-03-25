@@ -4,57 +4,57 @@
       "title": "Cumi Tepung",
       "price": "32.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?seafood"
+      "image": "https://i.ibb.co/SRPZ2zc/1.png"
     },
     {
       "id": 2,
       "title": "Cumi Bakar",
       "price": "32.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?seafood"
+      "image": "https://i.ibb.co/v3c7y44/2.png"
     },
     {
       "id": 3,
       "title": "Cumi Cabe G...",
       "price": "32.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/200x200/?seafood"
+      "image": "https://i.ibb.co/BTNTDPB/3.png"
     },
     {
       "id": 4,
       "title": "Cumi & Kerang",
-      "price": "",
+      "price": "0",
       "clicked": false,
-      "image": "https://source.unsplash.com/200x200/?seafood"
+      "image": "https://i.ibb.co/m56jh09/4.png"
     }
   ],
   "sayuran": [{
       "id": 5,
-      "title": "Cah Kalian",
+      "title": "Cah Kailan",
       "price": "28.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?salad"
+      "image": "https://i.ibb.co/M2p0GTt/5.png"
     },
     {
       "id": 6,
       "title": "Tahu Goreng",
-      "price": "28.000",
+      "price": "8.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?salad"
+      "image": "https://i.ibb.co/44MyCbd/6.png"
     },
     {
       "id": 7,
       "title": "Cah Taoge",
       "price": "35.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?random,salad"
+      "image": "https://i.ibb.co/JjrN42H/7.png"
     },
     {
       "id": 8,
       "title": "Sayuran",
-      "price": "",
+      "price": "0",
       "clicked": false,
-      "image": "https://source.unsplash.com/100x100/?salad"
+      "image": "https://i.ibb.co/QMbKXFB/8.png"
     }
   ],
   "ikan": [{
@@ -62,28 +62,28 @@
       "title": "Kerang Bamb...",
       "price": "38.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?oyster"
+      "image": "https://i.ibb.co/h13B5Ky/9.png"
     },
     {
       "id": 10,
       "title": "Kepiting Pad...",
       "price": "58.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?crab"
+      "image": "https://i.ibb.co/X5KYpFL/10.png"
     },
     {
       "id": 11,
       "title": "Gurame Asa...",
       "price": "42.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?fish"
+      "image": "https://i.ibb.co/z4TqYWT/11.png"
     },
     {
       "id": 12,
       "title": "Ikan",
-      "price": "",
+      "price": "0",
       "clicked": false,
-      "image": "https://source.unsplash.com/100x100/?rice"
+      "image": "https://i.ibb.co/51bJpdq/12.png"
     }
   ],
   "minuman": [{
@@ -91,28 +91,28 @@
       "title": "Udang Bakar",
       "price": "25.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?shrimp"
+      "image": "https://i.ibb.co/zH9J63p/13.png"
     },
     {
       "id": 14,
       "title": "Udang Saos...",
       "price": "20.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?shrimp"
+      "image": "https://i.ibb.co/hBBNfdG/14.png"
     },
     {
       "id": 15,
       "title": "Udang Mayo...",
       "price": "27.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?shrimp"
+      "image": "https://i.ibb.co/1LsY2j7/15.png"
     },
     {
       "id": 16,
       "title": "Minuman",
-      "price": "",
+      "price": "0",
       "clicked": false,
-      "image": "https://source.unsplash.com/100x100/?milktea"
+      "image": "https://i.ibb.co/0nzbh7s/16.png"
     }
   ],
   "happy": [{
@@ -120,28 +120,28 @@
       "title": "Iced Tea",
       "price": "5.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?tea"
+      "image": "https://i.ibb.co/2PQ6Npv/17.png"
     },
     {
       "id": 18,
       "title": "Es Jeruk Nipis",
       "price": "7.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?orange"
+      "image": "https://i.ibb.co/bzm1qdz/18.png"
     },
     {
       "id": 19,
       "title": "Nasi Putih",
       "price": "5.000",
       "clicked": true,
-      "image": "https://source.unsplash.com/100x100/?rice"
+      "image": "https://i.ibb.co/5L5FWgP/19.png"
     },
     {
       "id": 20,
       "title": "Happy Hour",
-      "price": "",
+      "price": "0",
       "clicked": false,
-      "image": "https://source.unsplash.com/100x100/?milktea"
+      "image": "https://i.ibb.co/5kDK1sy/20.png"
     }
   ]
 }
